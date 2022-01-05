@@ -37,7 +37,7 @@ extension _BinaryMessengerExt on BinaryMessenger {
   }
 
   // ignore: unused_element
-  bool checkMockMessageHandler(String channel, MessageHandler handler) {
+  bool checkMockMessageHandler(String channel, MessageHandler? handler) {
     return this.checkMockMessageHandler(channel, handler);
   }
 }
@@ -125,7 +125,7 @@ class DoKitBinaryMessenger extends BinaryMessenger {
 
   @override
   void setMockMessageHandler(String channel, handler) {
-    origin.setMockMessageHandler(channel, handler);
+    //origin.setMockMessageHandler(channel, handler);
   }
 
   @override

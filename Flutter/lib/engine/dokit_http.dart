@@ -74,14 +74,16 @@ class DoKitHttpClient implements HttpClient {
   @override
   set authenticate(
       Future<bool> Function(Uri url, String scheme, String realm)? f) {
-    origin.authenticate = f;
+      //origin.authenticate = f;
+      origin.authenticate = null;
   }
 
   @override
   set authenticateProxy(
       Future<bool> Function(String host, int port, String scheme, String realm)?
           f) {
-    origin.authenticateProxy = f;
+      //origin.authenticateProxy = f;
+      origin.authenticateProxy = null;
   }
 
   @override
