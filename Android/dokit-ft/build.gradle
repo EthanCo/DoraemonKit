@@ -9,8 +9,6 @@ android {
     defaultConfig {
         minSdkVersion rootProject.ext.android["minSdkVersion_16"]
         targetSdkVersion rootProject.ext.android["targetSdkVersion"]
-        versionCode rootProject.ext.android["versionCode"]
-        versionName rootProject.ext.android["versionName"]
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         javaCompileOptions { annotationProcessorOptions { includeCompileClasspath = true } }

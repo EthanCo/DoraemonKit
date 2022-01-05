@@ -11,8 +11,6 @@ android {
     defaultConfig {
         minSdkVersion rootProject.ext.android["minSdkVersion_16"]
         targetSdkVersion rootProject.ext.android["targetSdkVersion"]
-        versionCode rootProject.ext.android["versionCode"]
-        versionName rootProject.ext.android["versionName"]
 
         lintOptions {
             abortOnError false
@@ -93,6 +91,8 @@ dependencies {
     implementation rootProject.ext.dependencies["volley"]
     api rootProject.ext.dependencies["gson"]
     implementation rootProject.ext.dependencies["zxing"]
+    implementation rootProject.ext.dependencies["zxing"]
+    implementation 'androidx.localbroadcastmanager:localbroadcastmanager:1.0.0'
 
     //远程调试db
     //implementation rootProject.ext.dependencies["debug-db"]
